@@ -1,5 +1,5 @@
 {
-  "name": "sarafa-tpl-node-wrk",
+  "name": "sarafa-svc-node-wrk",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
