@@ -9,8 +9,7 @@
     "declaration": true,
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
-    "typeRoots": ["./node_modules/@types", "./types"],
-    "types": ["sarafa-svc-node-wrk"]
+    "typeRoots": ["./node_modules/@types", "./types"]
   },
   "include": ["src/**/*.ts", "types/index.d.ts"],
   "exclude": ["node_modules"]
