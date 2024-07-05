@@ -19,7 +19,7 @@ const worker = (cmd: CmdOptions): WorkerHandler => {
     //     {},
     //     getJSONConf(env, null, `${serviceRoot}/config/config.json`)
     // )
-    const workerFile = path.join(serviceRoot, '/workers/worker.js')
+    const workerFile = path.join(serviceRoot, '/handlers/handler.js')
 
     const ctx = {
         root: serviceRoot,
@@ -27,7 +27,7 @@ const worker = (cmd: CmdOptions): WorkerHandler => {
         worker: workerFile
     }
 
-    const HandlerClass = require(workerFile)
+    const { default: HandlerClass } = require(workerFile)
     const hnd = new HandlerClass(conf, ctx)
 
     return hnd
