@@ -34,7 +34,7 @@ process.on('SIGINT', () => {
   if (!hnd.active) {
     return;
   }
-  console.log('BKW', process.title, 'shutting down');
+  console.log('NODE_WRK', process.title, 'shutting down');
   hnd.stop(() => {
     process.exit();
   });
